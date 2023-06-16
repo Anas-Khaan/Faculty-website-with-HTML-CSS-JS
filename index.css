@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* for navigation Bar */
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100pc;
+    background-color: whitesmoke;
+}
+
+
+#list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+.logo-image {
+    max-width: 100px;
+}
+
+#list li {
+    padding: 10px;
+}
+
+#list li a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: static;
+    }
+    #list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #list li {
+      padding: 10px 5px;
+    }
+  }
+
+.overview {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    /* width: 100%; */
+}
+.overview > h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.container1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+
+}
+.programs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+
+table,
+th,
+td {
+    text-align: center;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+tr > th {
+    background-color: grey;
+    border: 1px 1px;
+    border-color: black;
+    color: white;
+}
+th,td {
+    padding: 10px;
+}
+table > caption {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.required {
+    color: red;
+    margin-left: 5px;
+}
+#survey > h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form-section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-section1 > span {
+    margin-top: 10px;
+}
+.form-section1 > span >input{
+    width:300px;
+}
+.form-section2 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-section2-b{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+}
+
+.form-section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.form-section3 >label,input{
+    margin-top: 10px;
+    
+}
+.form-section3 >.likelihood{
+    width: 350px;
+}
+.form-section3 >.button {
+    background-color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .form-section2 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: start;
+}
+.form-section2-a {
+    width: 400px;
+}
+.form-section2-b{
+    justify-content: start;
+    width: 400px;
+} */

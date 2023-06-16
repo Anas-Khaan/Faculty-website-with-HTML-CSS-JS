@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Faculty of Computer Science and Engineering</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+
+        <nav>
+            <ul id="list">
+                <li class="logo"><a href="https://giki.edu.pk/"><img class="logo-image" src="GIKI_logo_with_text.png"
+                            alt="logo"></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#addmission">Addmission</a></li>
+                <li><a href="#survey">Survey</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- Overview -->
+    <section class="overview">
+        <h1>Faculty of Computer Science and Engineering (FCSE)</h1>
+        <h2>Overview</h2>
+        <p>The Faculty of Computer Science and Engineering endeavors to produce competent scientists and engineers who
+            can
+            play a productive role both in the practical and research areas of computing. The faculty uses modern
+            technologies to enhance the learning capabilities of the students and to provide them with a stimulating and
+            challenging environment. Emphasis is put on the practical applications of computer systems to the software
+            and
+            hardware needs of the global industry in general and Pakistani industry in particular. The alumnus of the
+            faculty is placed in reputed national and international organizations including Microsoft Corporation,
+            Google
+            Inc., IBM, and Amazon.com.</p>
+    </section>
+
+    <!-- Programs and Core Courses -->
+    <section class="container1">
+        <h2>Master offered in following Programs</h2>
+        <div>
+            <ul class="programs">
+                <li>Bachelor of Science (MS) in Artificial Intelligence, partnered by Huawei</li>
+                <li>Bachelor of Science (MS) in Computer Engineering</li>
+                <li>Bachelor of Science (MS) in Computer Science</li>
+                <li>Bachelor of Science (MS) in Cyber Security</li>
+                <li>Bachelor of Science (MS) in Data Science</li>
+                <li>Bachelor of Science (MS) in Software Engineering</li>
+            </ul>
+        </div>
+
+        <div class="courses">
+            <table>
+                <caption>Core Courses</caption>
+                <tr>
+                    <th>Sr. No</th>
+                    <th>Course Name</th>
+                    <th>Course Code</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Advanced Algorithms and Computational Techniques</td>
+                    <td>CSE 501</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Advanced Operating Systems</td>
+                    <td>CSE 503</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Probability and Stochastic Processes</td>
+                    <td>CSE 602</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Survey -->
+    <section id="survey">
+        <h2>Survey</h2>
+        <form action="\submit" method="post" class="Survey">
+            <div class="form-section1">
+                <span class="required"><input type="text" id="username" name="username" autocomplete="username" required
+                        autofocus placeholder="Username">*</span>
+                <span class="required"><input type="text" id="address" name="address" autocomplete="address"
+                        placeholder="Street No. 1" required aria-placeholder="Address: Street 1">*</span>
+                <span class="required"><input type="text" id="city" name="city" autocomplete="city"
+                        placeholder="Peshawar" required>*</span>
+                <span class="required"><input type="text" id="zip" name="zip" placeholder="Zip code:25000">*</span>
+                <span class="required"><input type="tel" id="telphone" name="telphone" autocomplete="telphone"
+                        placeholder="+923333333333" required>*</span>
+                <span class="required"><input type="email" id="mail" name="mail" autocomplete="mail"
+                        placeholder="example@gmail.com" required>*</span>
+                <span><input type="date" id="date-survey" name="date-survey" required></span>
+            </div>
+            <div class="form-section2">
+                <!-- checkboxes for interest -->
+                <div class="form-section2-a">
+                    <p>Please Select what you liked most about the campus?</p>
+                    <div>
+                        <label for="students"><input type="checkbox" id="students" name="students"
+                                value="students">Students</label><br>
+                        <label for="location"><input type="checkbox" id="location" name="location"
+                                value="location">Location</label><br>
+                        <label for=" campus"><input type="checkbox" id=" campus" name=" campus"
+                                value=" campus">Campus</label><br>
+                        <label for="dorm-rooms"><input type="checkbox" id="dorm-rooms" name="dorm-rooms"
+                                value="dorm-rooms">Dorm rooms</label><br>
+                        <label for="sports"><input type="checkbox" id="sports" name="sports"
+                                value="sports">Sports</label><br>
+                    </div>
+                </div>
+
+                <!-- Hear About Us -->
+                <div class="form-section2-b">
+                    <p>Where you hear about us!</p>
+                    <div>
+                        <label for="student"><input type="radio" id="student" name="hear-about" value="student"
+                                checked>Students</label><br>
+
+                        <label for="televsion"><input type="radio" id="televsion" name="hear-about"
+                                value="televsion">Televsion</label><br>
+
+                        <label for="Internet"><input type="radio" id="Internet" name="hear-about"
+                                value="Internet">Internet</label><br>
+
+                        <label for="other"><input type="radio" id="other" name="hear-about"
+                                value="other">Other</label><br>
+                        <textarea id="message" name="message" rows="4" cols="60" placeholder="Enter your message"
+                            required></textarea>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+            <div class="form-section3">
+                <!-- Graduation Date -->
+                <label for="gradMonth">Graduation Date<span class="required">*</span>: <input list="months"
+                        id="gradMonth" name="Month" required>
+                    <datalist id="months">
+                        <option value="January">
+                        <option value="February">
+                        <option value="March">
+                        <option value="April">
+                        <option value="May">
+                        <option value="June">
+                        <option value="July">
+                        <option value="August">
+                        <option value="September">
+                        <option value="October">
+                        <option value="November">
+                        <option value="December">
+                    </datalist><input type="number" min="2016" max="2050" value="2016"></label>
+
+
+                <!-- Liklihood -->
+                <label class='likelihood' for="likelihood">How do you Recommend this School: <select name="recommendation" id="likelihood">
+                        <option value="Very likely">Very Likely</option>
+                        <option value="likely">Likely</option>
+                        <option value="unlikely">Unlikely</option>
+                    </select></label>
+
+                <input class="button" type="submit" value="Submit">
+            </div>
+
+        </form>
+    </section>
+</body>
+
+</html>
