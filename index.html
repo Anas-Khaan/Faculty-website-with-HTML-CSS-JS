@@ -7,10 +7,13 @@
     <link rel="stylesheet" href="index.css">
     <title>Faculty of Computer Science and Engineering</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
 </head>
 
-<body>
+<body onload="checkCookie()">
+    
     <!-- Header -->
+    
     <header>
 
         <nav>
@@ -165,7 +168,8 @@
 
 
                 <!-- Liklihood -->
-                <label class='likelihood' for="likelihood">How do you Recommend this School: <select name="recommendation" id="likelihood">
+                <label class='likelihood' for="likelihood">How do you Recommend this School: <select
+                        name="recommendation" id="likelihood">
                         <option value="Very likely">Very Likely</option>
                         <option value="likely">Likely</option>
                         <option value="unlikely">Unlikely</option>
@@ -177,5 +181,6 @@
         </form>
     </section>
 </body>
+<script src="index.js"></script>
 
 </html>
