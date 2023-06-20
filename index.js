@@ -1,3 +1,4 @@
+//          code for Cookies
 
 // Getting cookie from the cookie string in the browser, if exist
 function getCookie(cookieName) {
@@ -47,13 +48,51 @@ function displayGreeting(username) {
 function checkCookie() {
     let username = getCookie("username");
     if (username !== "") {
-      displayGreeting(username);
+        displayGreeting(username);
     } else {
-      username = prompt("Please enter your name:");
-      if (username !== "" && username !== null) {
-        setCookie("username", username, 1); // Set the cookie with an expiration time of 1 day
-        location.reload(); // Reload the page to get the new name from the cookie
-      }
+        username = prompt("Please enter your name:");
+        if (username !== "" && username !== null) {
+            setCookie("username", username, 1); // Set the cookie with an expiration time of 1 day
+            location.reload(); // Reload the page to get the new name from the cookie
+        }
     }
-  }
-  
+}
+
+//________________________________________________________________________________________//
+
+
+// Calculate Average and Maximum of 10 comma seperated numbers
+function calculateStats() {
+    const data = document.getElementById('data');
+    const average = document.getElementById('average');
+    const maximum = document.getElementById('maximum');
+
+    const str_data = data.value.trim();
+    const numbers = str_data.split(',');
+
+    if (numbers.length !== 10) {
+        alert('Please enter 10 comma-separated numbers.');
+        return;
+    }
+
+    let sum = 0;
+    let maxi = Number(numbers[0].trim());
+    for (let i = 0; i < numbers.length; i++) {
+        const number = Number(numbers[i].trim());
+        if (number < 1 || number > 100) {
+            alert('Please Enter Numbers between 1 and 100');
+            return;
+        }
+        sum += number;
+        if (number > maxi) {
+            maxi = number;
+        }
+
+    }
+    let avg = sum / numbers.length;
+    average.textContent = avg.toFixed(2);
+    maximum.textContent = maxi;
+
+}
+
+//________________________________________________________________________________________//

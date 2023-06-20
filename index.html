@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="index.css">
     <title>Faculty of Computer Science and Engineering</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    
+
 </head>
 
-<body onload="checkCookie()">
-    
+<body>
+
     <!-- Header -->
-    
+
     <header>
 
         <nav>
@@ -87,7 +87,7 @@
     </section>
 
     <!-- Survey -->
-    <section id="survey">
+    <section id="survey"> 
         <h2>Survey</h2>
         <form action="\submit" method="post" class="Survey">
             <div class="form-section1">
@@ -173,8 +173,13 @@
                         <option value="Very likely">Very Likely</option>
                         <option value="likely">Likely</option>
                         <option value="unlikely">Unlikely</option>
-                    </select></label>
-
+                    </select>
+                </label>
+                <div class="avg-max">
+                    <label for="data">Data: <input type="text" id="data" name="data" onblur="calculateStats()" placeholder="10 comma seperated numbers Between 1 and 100"></label><br>
+                    <label for="average">Average: <output id="average" name="average"></output></label><br>
+                    <label for="average">Maximum: <output id="maximum" name="maximum"></output></label>
+                </div>
                 <input class="button" type="submit" value="Submit">
             </div>
 
